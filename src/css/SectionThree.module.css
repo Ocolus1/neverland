@@ -1,0 +1,103 @@
+.h2 {
+    color: #FFBA00;
+    font-family: "Lora";
+    font-weight: 600;
+    text-align: center;
+    padding: 2.5em;
+}
+
+.container {
+    background: url(../img/sec_three_pinacle.png) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: auto;
+    background-position: bottom center;
+    padding-bottom: 3em;
+    z-index: 3;
+    position: relative;
+}
+
+.p {
+    background: url(../img/sec_three_blob.png) no-repeat;
+    background-size: 20em;
+    background-position: center;
+    max-width: 100%;
+    color: #ffffff;
+    padding: 3em;
+    height: 16em;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    /* border: 1px solid white; */
+}
+
+.h5 {
+    color: #FFBA00;
+    font-family: "Lora";
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.col {
+    max-width: 100%;
+    height: 20em;
+    /* border: 1px solid white; */
+}
+
+@media screen and (min-width: 520px) { 
+    .p {
+        background-size: 22em;
+        padding: 3.5em 4em;
+        background-origin: border-box;
+        height: 16em;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .p {
+        background-size: 22em;
+        padding: 3em 1em;
+        height: 20em;
+        width: 90%;
+        font-size: 90%;
+    }
+    .col {
+        max-width: 100%;
+        height: 26em;
+    }
+}
+
+
+@media screen and (min-width: 992px) { 
+    .p {
+        background-size: 20em;
+        padding: 3.1em 3em;
+        height: 17em;
+        width: 100%;
+        font-size: 100%;
+    }
+    .col {
+        max-width: 100%;
+        height: 24em;
+    }
+    
+}
+
+@media screen and (min-width: 1400px) { 
+    .p {
+        background-size: 20em;
+        padding: 3.9em 4em;
+        height: 17em;
+        width: 100%;
+        font-size: 100%;
+    }
+    .col {
+        max-width: 100%;
+        height: 24em;
+    }
+    
+}

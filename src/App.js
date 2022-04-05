@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navigation from "./components/Navigation"
+import Hero from "./components/Hero"
+import  { Button} from "react-bootstrap"
+import "./App.css"
+import SectionTwo from './components/SectionTwo';
+import SectionThree from './components/SectionThree';
+import SectionFour from './components/SectionFour';
+import SectionFive from './components/SectionFive';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+    const linearBtn = (text, link) => {
+      return (
+          <Button style={{
+              color: "#000000",
+              background: "linear-gradient(95.54deg, #00FF96 6.9%, #007E4A 97%)",
+              borderRadius: "10px",
+              flexDirection: "row",
+              alignItems: "flex-start",
+              padding: "10px 20px",
+          }} href={link}>{text}</Button>
+      )
+  }
+
+  return ( 
+    <>
+      <div className='sec_one_div'>
+        <Navigation linearBtn={linearBtn}/>
+        <Hero linearBtn={linearBtn} />
+      </div>
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+    </>
+   );
 }
-
+ 
 export default App;

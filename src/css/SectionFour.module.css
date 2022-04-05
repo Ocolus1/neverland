@@ -1,0 +1,205 @@
+.section_four {
+	background: url(../img/sec_four_transparent_img.png) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: auto;
+    background-position: bottom center;
+    padding-bottom: 3em;
+	margin-top: -8em;
+	position: relative;
+	z-index: 1;
+	padding-top: 10em;
+}
+
+
+.pt-100{
+    padding-top:100px;
+}
+.pb-100{
+    padding-bottom:100px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+	position: relative;
+	margin: 0 auto 2rem auto;
+	width: 100%;
+}
+
+/* The actual timeline (the vertical ruler) */
+
+.h_3 {
+	color: #FFBA00;
+	margin-bottom: 3em;
+}
+
+
+.time_div {
+	position: relative;
+}
+
+.time_hr {
+	background-color: #FFBA00;
+	padding: 0;
+	height: 2px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Place the container to the left */
+.left {
+	left: 0%;
+	padding: 1rem 0;
+	position: relative;
+	background-color: inherit;
+	width: 100%;
+	/* border: 2px solid green; */
+	margin: 0 auto;
+	/* padding: 1rem 0rem 1rem 20rem; */
+}
+
+/* Place the container to the right */
+.right {
+	left: 0%;
+	padding: 1rem 0;
+	position: relative;
+	background-color: inherit;
+	width: 100%;
+	/* border: 2px solid green; */
+	margin: 0 auto;
+	/* padding: 1rem 20rem 1rem 0rem;  */
+}
+
+/* The actual content */
+.content {
+	text-align: center;
+	max-width: 100%;
+    color: #ffffff;
+	margin-bottom: 2em;
+
+}
+
+.time_p {
+	color: #FFFFFFDE;
+	font-family: Rosarivo;
+	font-size: 80%;
+	line-height: .3em;
+}
+
+.top {
+	color: #FFBA00;
+	margin-bottom: 1em;
+}
+
+#one {
+	background: url(../img/sec_four_blob_one.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 3em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#two {
+	background: url(../img/sec_four_blob_two.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 3em;
+    text-align: center;
+    margin-top: 0;
+}
+
+#three {
+	background: url(../img/sec_four_blob_three.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 3em;
+    text-align: center;
+    margin-top: 0;
+}
+
+#four {
+	background: url(../img/sec_four_blob_four.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 3em;
+    text-align: center;
+    margin-top: 0;
+}
+
+#five {
+	background: url(../img/sec_four_blob_five.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 3em;
+    text-align: center;
+    margin-top: 0;
+}
+
+#six {
+	background: url(../img/sec_four_blob_six.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 3em;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+
+@media screen and (min-width: 576px) {
+	
+
+	.left {
+		padding: 1rem 0rem 1rem 2rem;
+	}
+
+	.right {
+		padding: 1rem 2rem 1rem 0rem; 
+	}
+
+}
+
+@media screen and (min-width: 768px) { 
+	
+	.h_3 {
+		font-size: 200%;
+	}
+	
+	.timeline::after {
+		content: '';
+		position: absolute;
+		width: 2px;
+		background-color: #FFBA00;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		/* margin-left: -3px; */
+	}
+
+
+	.left {
+		left: 0%;
+		margin: 0;
+		width: 50%;
+		padding: 0;
+	}
+	
+	.right {
+		left: 50%;
+		margin: 0;
+		width: 50%;
+		padding: 0;
+	}
+
+
+	.time_hr {
+		width: 80%;
+	}
+	
+	
+	
+}
+/*  */

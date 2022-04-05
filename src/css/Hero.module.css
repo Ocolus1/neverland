@@ -1,0 +1,27 @@
+.row_top {
+    text-align: center;
+    color: #FFBA00;
+    padding-top: 5em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .row_top {
+        padding-top: 12%;
+    }
+
+    .h5{
+        font-size: 150%;
+    }
+    .h3 {
+        font-size: 200%;
+        padding-bottom: .3em;
+    }
+}
+
+@media screen and (min-width: 999px) {
+    .h3 {
+        font-size: 400%;
+        padding-bottom: .3em;
+    }
+}
