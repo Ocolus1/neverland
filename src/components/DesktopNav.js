@@ -6,7 +6,7 @@ const DesktopNav = (props) => {
 
   return (
     <Container fluid>
-      <Row className="justify-content-md-between pt-1">
+      <Row className="justify-content-md-between pt-4">
         <Col xs md="3">
           <Stack direction="horizontal" className="my-2" gap={3} style={{ color: "#FFBA00" }}>
             <FaTwitter className="fs-3 mx-3 my-2" />

@@ -36,7 +36,9 @@
 
 .time_div {
 	position: relative;
+	
 }
+
 
 .time_hr {
 	background-color: #FFBA00;
@@ -199,7 +201,16 @@
 		width: 80%;
 	}
 	
-	
+	.time_div:nth-child(even) {
+		background: url(../img/sec_four_img.png) no-repeat;
+		background-size: 40%;
+		background-position: center right;
+	}
+	.time_div:nth-child(odd) {
+		background: url(../img/sec_four_img.png) no-repeat;
+		background-size: 40%;
+		background-position: center left;
+	}
 	
 }
 /*  */

@@ -24,7 +24,9 @@ const SectionFour = () => {
                                 borderRadius: "10px",
                                 flexDirection: "row",
                                 alignItems: "flex-start",
+                                fontFamily: 'Lora',
                                 padding: "10px 20px",
+                                border: "none"
                             }}
                         >JOIN DISCORD</Button>
                     </Col>

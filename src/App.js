@@ -19,6 +19,7 @@ const App = () => {
               flexDirection: "row",
               alignItems: "flex-start",
               padding: "10px 20px",
+              border: "none",
           }} href={link}>{text}</Button>
       )
   }
