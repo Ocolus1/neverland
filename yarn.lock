@@ -7349,6 +7349,11 @@ react-preload@^0.6.0:
   resolved "https://registry.yarnpkg.com/react-preload/-/react-preload-0.6.0.tgz#aea062ab8ae7e04380a15432681fb08550a0f677"
   integrity sha512-4umNWO8HwoqhXbWG589m3LRPb1NYtmiVAdc2gpXi4AqF7B2XbgW7p6j9I1OMW89uH/mnQ6iOsnDZLmqeEToeaw==
 
+react-progressive-image-loading@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-progressive-image-loading/-/react-progressive-image-loading-3.0.3.tgz#7e99298b9bd76bc7dcfba9cdf83c263d41f17dc3"
+  integrity sha1-fpkpi5vXa8fc+6nN+DwmPUHxfcM=
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"

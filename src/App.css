@@ -1,13 +1,27 @@
 .sec_one_div {
-    background: url(./img/sec_one_black_transparent_img.png) no-repeat, url(./img/sec_one_floating_island.png) no-repeat;
+    /* background: url(./img/sec_one_black_transparent_img.png) no-repeat, url(./img/sec_one_floating_island.png) no-repeat; */
+    background: url(./img/preview_one.png) , url(./img/preview_two.png) ;
     background-size: cover;
     max-width: 100%;
     min-height: 25em;
+    background-repeat: no-repeat;
+    /* min-height: 45em; */
+}
+.sec_one_div2 {
+    background: url(./img/sec_one_black_transparent_img.png) no-repeat, url(./img/sec_one_floating_island.png) no-repeat;
+    /* background: url(./img/preview_one.png) , url(./img/preview_two.png) ; */
+    background-size: cover;
+    max-width: 100%;
+    min-height: 25em;
+    background-repeat: no-repeat;
     /* min-height: 45em; */
 }
 
 @media screen and (min-width: 780px) {
     .sec_one_div {
+        min-height: 45em;
+    }
+    .sec_one_div2 {
         min-height: 45em;
     }
 }

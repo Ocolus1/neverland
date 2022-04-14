@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState,  useEffect } from 'react';
 import Navigation from "./components/Navigation"
 import Hero from "./components/Hero"
 import { Button } from "react-bootstrap"
@@ -12,12 +12,16 @@ import BounceLoader from "react-spinners/BounceLoader";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  useEffect(() => {
+  const [background, setBackground] = useState("sec_one_div");
 
+  useEffect(() => {
     // Wait for 3 seconds
     setTimeout(() => {
       setLoading(false);
-    }, 7000);
+    }, 3000);
+    setTimeout(() => {
+      setBackground("sec_one_div2");
+    }, 10000);
   }, []);
 
   const override = css`
@@ -43,14 +47,16 @@ const App = () => {
     )
   }
 
-  
+
+ 
   return (loading ?
 
     // If page is still loading then splash screen
     <BounceLoader color={'#36D7B7'} isLoading={loading}
       css={override} size={150} /> :
     <>
-      <div className='sec_one_div'>
+
+      <div className={background}>
         <Navigation linearBtn={linearBtn} />
         <Hero linearBtn={linearBtn} />
       </div>
