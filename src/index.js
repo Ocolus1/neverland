@@ -1,11 +1,11 @@
-import React, { Suspense, lazy } from 'react';
-// import React from 'react';
+// import React, { Suspense, lazy } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactBreakpoints from 'react-breakpoints'
-import { css } from "@emotion/react";
-const App = lazy(() => import('./App'));
+// import { css } from "@emotion/react";
+import App from "./App"
  
 const breakpoints = {
   mobile: 320,
@@ -17,31 +17,31 @@ const breakpoints = {
   desktopWide: 1920,
 }
 
-const load = () => {
-  return(
-    <div class="spinner-border text-success" style={override} role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div>
-  )
-}
+// const load = () => {
+//   return(
+//     <div class="spinner-border text-success" style={override} role="status">
+//       <span class="visually-hidden">Loading...</span>
+//     </div>
+//   )
+// }
 
-const override = css`
-  display: block;
-  margin: 0 auto;
-`;
+// const override = css`
+//   display: block;
+//   margin: 0 auto;
+// `;
 
-// ReactDOM.render(
-//   <ReactBreakpoints breakpoints={breakpoints}>
-//       <App />
-//   </ReactBreakpoints>,
-//   document.getElementById('root'),
-// );
 ReactDOM.render(
   <ReactBreakpoints breakpoints={breakpoints}>
-    <Suspense fallback={load}>
       <App />
-    </Suspense>
   </ReactBreakpoints>,
   document.getElementById('root'),
 );
+// ReactDOM.render(
+//   <ReactBreakpoints breakpoints={breakpoints}>
+//     <Suspense fallback={load}>
+//       <App />
+//     </Suspense>
+//   </ReactBreakpoints>,
+//   document.getElementById('root'),
+// );
 
