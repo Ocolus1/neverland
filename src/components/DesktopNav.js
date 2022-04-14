@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Container, Stack, Nav} from "react-bootstrap"
+import { Row, Col, Container, Stack, Nav } from "react-bootstrap"
 import { FaTwitter, FaFacebook, FaDiscord, FaInstagram } from "react-icons/fa";
 
 const DesktopNav = (props) => {
@@ -9,10 +9,18 @@ const DesktopNav = (props) => {
       <Row className="justify-content-md-between pt-4">
         <Col xs md="3">
           <Stack direction="horizontal" className="my-2" gap={3} style={{ color: "#FFBA00" }}>
-            <FaTwitter className="fs-3 mx-3 my-2" />
-            <FaFacebook className="fs-3 mx-3 my-2" />
-            <FaDiscord className="fs-3 mx-3 my-2" />
-            <FaInstagram className="fs-3 mx-3 my-2" />
+            <Nav.Link href="#" style={{ color: "#FFBA00" }}>
+              <FaTwitter className="fs-3 mx-3 my-2" />
+            </Nav.Link>
+            <Nav.Link href="#" style={{ color: "#FFBA00" }}>
+              <FaFacebook className="fs-3 mx-3 my-2" />
+            </Nav.Link>
+            <Nav.Link href="#" style={{ color: "#FFBA00" }}>
+              <FaDiscord className="fs-3 mx-3 my-2" />
+            </Nav.Link>
+            <Nav.Link href="#" style={{ color: "#FFBA00" }}>
+              <FaInstagram className="fs-3 mx-3 my-2" />
+            </Nav.Link>
           </Stack>
         </Col>
         <Col xs md="4" className="text-center">

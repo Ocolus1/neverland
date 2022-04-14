@@ -9,6 +9,7 @@ import SectionFour from './components/SectionFour';
 import SectionFive from './components/SectionFive';
 import { css } from "@emotion/react";
 import BounceLoader from "react-spinners/BounceLoader";
+import { Media } from 'react-breakpoints'
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -21,7 +22,7 @@ const App = () => {
     }, 3000);
     setTimeout(() => {
       setBackground("sec_one_div2");
-    }, 10000);
+    }, 70000);
   }, []);
 
   const override = css`
@@ -50,10 +51,20 @@ const App = () => {
 
  
   return (loading ?
-
-    // If page is still loading then splash screen
-    <BounceLoader color={'#36D7B7'} isLoading={loading}
-      css={override} size={150} /> :
+    <Media>
+        {({ breakpoints, currentBreakpoint }) =>
+          breakpoints[currentBreakpoint] > breakpoints.tablet ? (
+            // If page is still loading then splash screen
+            <BounceLoader color={'#36D7B7'} isLoading={loading}
+            css={override} size={150} />
+          ) : (
+            // If page is still loading then splash screen
+            <BounceLoader color={'#36D7B7'} isLoading={loading}
+            css={override} size={50} />
+          )
+        }
+      </Media>
+     :
     <>
 
       <div className={background}>
