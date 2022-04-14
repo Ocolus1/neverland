@@ -7344,6 +7344,11 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-preload@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/react-preload/-/react-preload-0.6.0.tgz#aea062ab8ae7e04380a15432681fb08550a0f677"
+  integrity sha512-4umNWO8HwoqhXbWG589m3LRPb1NYtmiVAdc2gpXi4AqF7B2XbgW7p6j9I1OMW89uH/mnQ6iOsnDZLmqeEToeaw==
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
