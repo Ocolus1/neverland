@@ -7,7 +7,7 @@ import land from "../img/sec_two_floating_land.png"
 const SectionTwo = () => {
     return (
         <Container fluid 
-            className={styles.container}
+            className={styles.container_for_all}
         >
             <Container>
                 <Row className="justify-content-md-center align-items-center">

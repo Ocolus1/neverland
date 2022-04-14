@@ -1,4 +1,4 @@
-.container {
+.container_for_all {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), radial-gradient(50.1% 50.1% at 65.68% 49.9%, rgba(3, 128, 76, 0.7) 0%, rgba(5, 130, 78, 0.7) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(276.89deg, #1B2B3A 0%, rgba(27, 43, 58, 0.5) 25.53%, rgba(46, 90, 72, 0.5) 37.82%, rgba(27, 43, 58, 0.5) 47.46%, #1D2738 100%);
     
 }
