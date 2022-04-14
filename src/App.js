@@ -15,9 +15,9 @@ const App = () => {
   useEffect(() => {
 
     // Wait for 3 seconds
-    // setTimeout(() => {
-    //   setLoading(false);
-    // }, 3000);
+    setTimeout(() => {
+      setLoading(false);
+    }, 7000);
   }, []);
 
   const override = css`
@@ -43,7 +43,12 @@ const App = () => {
     )
   }
 
-  return (
+  
+  return (loading ?
+
+    // If page is still loading then splash screen
+    <BounceLoader color={'#36D7B7'} isLoading={loading}
+      css={override} size={150} /> :
     <>
       <div className='sec_one_div'>
         <Navigation linearBtn={linearBtn} />
@@ -55,22 +60,6 @@ const App = () => {
       <SectionFive />
     </>
   );
-  // return (loading ?
-
-  //   // If page is still loading then splash screen
-  //   <BounceLoader color={'#36D7B7'} isLoading={loading}
-  //     css={override} size={150} /> :
-  //   <>
-  //     <div className='sec_one_div'>
-  //       <Navigation linearBtn={linearBtn} />
-  //       <Hero linearBtn={linearBtn} />
-  //     </div>
-  //     <SectionTwo />
-  //     <SectionThree />
-  //     <SectionFour />
-  //     <SectionFive />
-  //   </>
-  // );
 }
 
 export default App;
