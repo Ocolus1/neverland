@@ -15,13 +15,13 @@
     }
     .h3 {
         font-size: 200%;
-        padding-bottom: .3em;
+        padding-bottom: .4em;
     }
 }
 
 @media screen and (min-width: 999px) {
     .h3 {
         font-size: 400%;
-        padding-bottom: .3em;
+        padding-bottom: .5em;
     }
 }
