@@ -9,18 +9,19 @@ const DesktopNav = (props) => {
       <Row className="justify-content-md-between pt-4">
         <Col xs md="3">
           <Stack direction="horizontal" className="my-2" gap={3} style={{ color: "#FFBA00" }}>
-            <Nav.Link href="#" style={{ color: "#FFBA00" }}>
+            <Nav.Link href="https://twitter.com/NEVERLAND_NFT?t=cjipYjQ020LLWgU0POiR8w&s=09" 
+            target="_blank" style={{ color: "#FFBA00" }}>
               <FaTwitter className="fs-3 mx-3 my-2" />
             </Nav.Link>
-            <Nav.Link href="#" style={{ color: "#FFBA00" }}>
+            <Nav.Link href="https://discord.gg/5AwxJfPy" target="_blank" style={{ color: "#FFBA00" }}>
+              <FaDiscord className="fs-3 mx-3 my-2" />
+            </Nav.Link>
+            {/* <Nav.Link href="#" style={{ color: "#FFBA00" }}>
               <FaFacebook className="fs-3 mx-3 my-2" />
             </Nav.Link>
             <Nav.Link href="#" style={{ color: "#FFBA00" }}>
-              <FaDiscord className="fs-3 mx-3 my-2" />
-            </Nav.Link>
-            <Nav.Link href="#" style={{ color: "#FFBA00" }}>
               <FaInstagram className="fs-3 mx-3 my-2" />
-            </Nav.Link>
+            </Nav.Link> */}
           </Stack>
         </Col>
         <Col xs md="4" className="text-center">

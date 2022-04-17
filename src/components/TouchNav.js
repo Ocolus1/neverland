@@ -37,20 +37,21 @@ const TouchNav = (props) => {
                                     <Nav.Link href="#action1" style={{ color: "#FFBA00"  }}>DOCS</Nav.Link>
                                     <Nav.Link href="#action1" style={{ color: "#FFBA00"  }}>DUST CONTRACT</Nav.Link>
                                     <Stack direction="horizontal" 
-                                    className="my-2 me-5   position-absolute bottom-0 end-0" 
+                                    className="my-2 me-5  position-absolute bottom-0 start-0" 
                                     gap={3} style={{ color: "#FFBA00" }}>
-                                        <Nav.Link href="#"  style={{ color: "#FFBA00" }}>
+                                        <Nav.Link href="https://twitter.com/NEVERLAND_NFT?t=cjipYjQ020LLWgU0POiR8w&s=09" 
+                                            target="_blank"  style={{ color: "#FFBA00" }}>
                                             <FaTwitter className="fs-3 mx-3 my-2"  />
                                         </Nav.Link>
-                                        <Nav.Link href="#"  style={{ color: "#FFBA00" }}>
+                                        <Nav.Link href="https://discord.gg/5AwxJfPy" target="_blank"  style={{ color: "#FFBA00" }}>
+                                            <FaDiscord className="fs-3 mx-3 my-2" />
+                                        </Nav.Link>
+                                        {/* <Nav.Link href="#"  style={{ color: "#FFBA00" }}>
                                             <FaFacebook className="fs-3 mx-3 my-2" />
                                         </Nav.Link>
                                         <Nav.Link href="#"  style={{ color: "#FFBA00" }}>
-                                            <FaDiscord className="fs-3 mx-3 my-2" />
-                                        </Nav.Link>
-                                        <Nav.Link href="#"  style={{ color: "#FFBA00" }}>
                                             <FaInstagram className="fs-3 mx-3 my-2" />
-                                        </Nav.Link>
+                                        </Nav.Link> */}
                                     </Stack>
                                 </Nav>
                             </Offcanvas.Body>

@@ -28,6 +28,8 @@ const SectionFour = () => {
                                 padding: "10px 20px",
                                 border: "none"
                             }}
+                            href="https://discord.gg/5AwxJfPy"
+                            target="_blank"
                         >JOIN DISCORD</Button>
                     </Col>
                 </Row>
